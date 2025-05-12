@@ -23,13 +23,14 @@ h2 {
 
 /* Capa */
 .capa {
-  background-image: url('foto/pexels-thibault-trillet-44912-167636.jpg');
+  background-image: url('');
   background-size: cover;
   background-position: center;
   color: rgb(49, 146, 70);
   text-align: center;
   padding: 100px 20px;
 }
+
 
 .conteudo-capa h1 {
   font-size: 3rem;
@@ -551,12 +552,12 @@ body {
 
 h1, h2, h3 {
   font-family: 'Lobster', cursive;
-  color: #ffcc00;
+  color: #c4a21c;
   text-align: center;
 }
 
 a {
-  color: #ffcc00;
+  color: #ee3482;
   text-decoration: none;
 }
 
@@ -670,7 +671,7 @@ audio {
 }
 
 .menu a:hover {
-  color: #ffcc00;
+  color: #c49f0e;
 }
 
 .menu a i {
@@ -694,7 +695,7 @@ audio {
 }
 
 .social-media a:hover {
-  color: #ffcc00;
+  color: #cfb23f;
 }
 
 .rodape p {

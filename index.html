@@ -5,18 +5,61 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Bailão do Dico</title>
   <link rel="stylesheet" href="style.css">
+
+  <!-- Google Fonts -->
+<link href="https://fonts.googleapis.com/css2?family=Lobster&family=Roboto&display=swap" rel="stylesheet">
+
+<!-- Cabeçalho com imagem de fundo -->
+<header style="background-image: url('foto/Imagem do WhatsApp de 2025-05-02 à(s) 22.04.07_16f01f34.jpg'); background-size: cover; background-position: center; height: 400px; color: white; text-align: center; padding: 50px 0;">
+  <h1 style="font-size: 50px; margin: 0;">Bailão do Dico</h1>
+  <p style="font-size: 24px; margin-top: 10px;">O Baile da Família Itapoaense</p>
+</header>
+
+<footer class="rodape-links">
+  <a href="#sobre">🏠 Sobre</a>
+  <a href="#audio">🎶 audio</a>
+  <a href="#galeria">📷 Fotos</a>
+  <a href="#galeria-videos">🎥 videos</a>
+  <a href="#eventos">📅 Eventos</a>
+  <a href="#depoimentos">💬 Depoimentos</a>
+  <a href="#ingressos">🎫 Ingressos</a>
+  <a href="#qrcode pix">💳 Pix</a>
+  <a href="#mapa">📍 Contato</a>
+</footer>
+
+</header>
+
+
+</footer>
+
+
+
+<!-- Meta tags para SEO e responsividade -->
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="description" content="O Bailão do Dico é tradição, alegria e música para toda a família. Venha dançar com a gente!">
+<meta property="og:title" content="Bailão do Dico">
+<meta property="og:description" content="Música, alegria e tradição no Bailão do Dico!">
+<meta property="og:image" content="URL_DA_IMAGEM">
+<meta property="og:url" content="https://dilson123-tech.github.io/bailao-do-dico-super/">
+
+<!-- Incluir CSS do Lightbox -->
+<link href="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.3/css/lightbox.min.css" rel="stylesheet">
+
+<!-- Incluir o JS do Lightbox -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.3/js/lightbox.min.js"></script>
+
 </head>
 <body>
 
-  <!-- Capa e título -->
-  <div class="capa">
-    <div class="conteudo-capa">
-      <h1>Bailão do Dico</h1>
-      <h2>O baile da família Itapoáense</h2>
-    </div>
-  </div>
-
   
+
+  <div class="container">
+  <section id="sobre">
+    <h1>Bem-vindo ao Bailão do Dico</h1>
+    <p>Tradição, alegria e música para toda a família!</p>
+  </section>
+</div>
+
 
   <!-- Sobre -->
   <section class="sobre">
@@ -29,8 +72,6 @@
       </p>
     </div>
   </section>
-
-  
 
 </body>
 </html>
@@ -49,7 +90,7 @@
   <div class="audio-container">
     <h2>Músicas que rodam nos bailão</h2>
   
-    <div class="audio-box">
+    <div class="audio-box" id="audio">
       <audio controls>
         <source src="foto/Áudio do WhatsApp de 2025-05-01 à(s) 10.26.58_0c9c6086.mp3" type="audio/mpeg">
         Seu navegador não suporta o áudio.
@@ -111,7 +152,7 @@
 <section class="galeria-section">
   <h2>Galeria de Fotos</h2>
   <div class="galeria-fotos">
-    <img src="foto/IMG-20250509-WA0044.jpg" alt="Foto 1">
+    <img src="foto/IMG-20250509-WA0053.jpg" alt="Foto 1">
     <img src="foto/IMG-20250509-WA0046.jpg" alt="Foto 2">
     <img src="foto/IMG-20250509-WA0045.jpg" alt="Foto 3">
     <img src="foto/IMG-20250509-WA0053.jpg" alt="Foto 4">
@@ -119,8 +160,27 @@
     <img src="foto/Imagem do WhatsApp de 2025-05-02 à(s) 22.26.45_2a6517e4.jpg" alt="Foto 6">
   </div>
 
+  
+
+  <section id="galeria" class="galeria" itemid="foto">
+  <h2>Galeria de Fotos</h2>
+  <div class="foto/istockphoto-1205576906-1024x1024.jpg">
+    <div class="foto">
+      <img src="foto/Imagem do WhatsApp de 2025-05-02 à(s) 12.17.52_6ed2179d.jpg" alt="Foto 1">
+    </div>
+    <div class="foto">
+      <img src="foto/IMG-20250509-WA0049.jpg" alt="Foto 2">
+    </div>
+    <div class="foto">
+      <img src="foto/IMG-20250509-WA0044.jpg" alt="Foto 3">
+    </div>
+    <!-- Adicione mais fotos aqui -->
+  </div>
+</section>
+
+
   <h2>Galeria de Vídeos, musicas que rolam no bailão</h2>
-  <div class="galeria-videos">
+  <div class="galeria-videos" id="galeria-videos">
     <iframe src="foto/VID-20250505-WA0006.mp4" title="videp 1" allowfullscreen></iframe>
     <iframe src="foto/Vídeo do WhatsApp de 2025-05-02 à(s) 13.11.45_e2c59095.mp4" title="Vídeo 2" allowfullscreen></iframe>
     <iframe src="foto/Vídeo do WhatsApp de 2025-05-04 à(s) 02.18.20_f8477597.mp4" title="Vídeo 3" allowfullscreen></iframe>
@@ -131,7 +191,7 @@
 </section>
 
 
-<section class="eventos-section">
+<section class="eventos-section" id="eventos-section">
   <h2>🎉 Próximos Eventos</h2>
   <div class="evento">
     <p><strong>Data:</strong> 10 de Maio de 2025</p>
@@ -141,9 +201,9 @@
   </div>
 </section>
 
-<section class="eventos-section">
+<section class="eventos-section" id="eventos">
   <h2>🎉 Próximos Eventos</h2>
-  <div class="evento">
+  <div class="eventos">
     <p><strong>Data:</strong> 17 de Maio de 2025</p>
     <p><strong>Horário:</strong> 22h00</p>
     <p><strong>Local:</strong> Bailão do Dico, Itapoá</p>
@@ -151,7 +211,7 @@
   </div>
 </section>
 
-<section class="depoimentos-section">
+<section class="depoimentos-section" id="depoimentos">
   <h2>💬 Depoimentos de Clientes</h2>
   <div class="depoimentos-container">
     <div class="depoimento">
@@ -171,7 +231,7 @@
 
 <div class="contatos">
   <h2>Contatos</h2>
-  <div class="contatos-icons">
+  <div class="contatos-icons" id="contatos">
     <!-- WhatsApp -->
     <a href="https://wa.me/5547996876878" target="_blank" class="contato-item">
       <img src="https://cdn-icons-png.flaticon.com/512/733/733585.png" alt="WhatsApp">
@@ -196,7 +256,7 @@
   </div>
 </div>
 
-<section class="ingressos">
+<section class="ingressos" id="ingressos">
   <h2>🎟️ Ingressos</h2>
   <div class="ingresso-box">
     <div class="ingresso feminino">
@@ -212,11 +272,11 @@
 
 
 </section>
-<section class="pix-section">
+<section class="pix-section" id="pagamento pix">
   <h2>💳 Pagamento via Pix</h2>
   <p>Escaneie o QR Code abaixo com seu app bancário ou copie a chave Pix para realizar o pagamento.</p>
 
-  <div class="pix-container">
+  <div class="pix-container" id="qrcode pix">
     <img src="foto/qrcode.png" alt="QR Code Pix" class="qrcode-img">
     
     <div class="pix-dados">
@@ -226,7 +286,7 @@
   </div>
 </section>
 
-<section class="contato-section">
+<section class="contato-section" id="Contato">
   <h2>📍 Localização & Contato</h2>
   <div class="contato-container">
     <div class="info-contato">
@@ -235,7 +295,7 @@
       <p>✉️ E-mail. dilsonpereira231@gmail.com</p>
       <p>💬 WhatsApp: <a href="https://wa.me/5547996876878" target="_blank">Clique aqui</a></p>
     </div>
-    <div class="mapa">
+    <div class="mapa" id="mapa">
       <!-- Substitua o link abaixo pelo código gerado do Google Maps -->
       <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3472.925229105401!2d-48.6720844847531!3d-26.23689242818169!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94df46e40b1c8b99%3A0x6187c4a25688fd2!2sRua%20Central%2C%20123%20-%20Itapo%C3%A1%2FSC!5e0!3m2!1spt-BR!2sbr!4v1615206355502!5m2!1spt-BR!2sbr" width="100%" height="250" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
     </div>

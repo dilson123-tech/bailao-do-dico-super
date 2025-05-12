@@ -7,13 +7,13 @@
 #timer {
   font-size: 2rem;
   font-weight: bold;
-  color: #9b240a; /* Cor do contador */
+  color: #631908; /* Cor do contador */
 }
 
 #dias, #horas, #minutos, #segundos {
   font-size: 2.5rem;
   font-weight: bold;
-  color: #062c07; /* Cor verde para os números */
+  color: #10c528; /* Cor verde para os números */
 }
 
 h2 {
@@ -26,7 +26,7 @@ h2 {
   background-image: url('');
   background-size: cover;
   background-position: center;
-  color: rgb(49, 146, 70);
+  color: rgb(14, 59, 24);
   text-align: center;
   padding: 100px 20px;
 }
@@ -34,18 +34,18 @@ h2 {
 
 .conteudo-capa h1 {
   font-size: 3rem;
-  text-shadow: 2px 2px 4px #000;
+  text-shadow: 2px 2px 4px #0e0c0c;
 }
 
 .conteudo-capa h2 {
   font-size: 1.5rem;
-  text-shadow: 1px 1px 3px #000;
+  text-shadow: 1px 1px 3px #0c0c0c;
 }
 
 /* Seção sobre */
 .sobre {
   padding: 50px 20px;
-  background-color: #f1f1f1;
+  background-color: #b6babdd7;
   text-align: center;
 }
 
@@ -57,7 +57,7 @@ h2 {
 
 .conteudo-sobre p {
   font-size: 1.2rem;
-  color: #26115e;
+  color: #3b2e2e;
   max-width: 800px;
   margin: 0 auto;
 }
@@ -87,14 +87,14 @@ h2 {
 
 .galeria-section {
   padding: 40px 20px;
-  background-color: #f9f9f9;
+  background-color: #26a32d;
   text-align: center;
 }
 
 .galeria-section h2 {
   margin-bottom: 20px;
   font-size: 2rem;
-  color: #181515;
+  color: #3f17af;
 }
 
 .galeria-fotos,
@@ -186,7 +186,7 @@ h2 {
   margin-top: 15px;
   padding: 10px 20px;
   background-color: #a30000;
-  color: rgb(223, 209, 209);
+  color: rgb(150, 116, 116);
   border-radius: 6px;
   text-decoration: none;
   transition: background 0.3s ease;
@@ -205,7 +205,7 @@ h2 {
 .depoimentos-section h2 {
   font-size: 2rem;
   margin-bottom: 30px;
-  color: #b30000;
+  color: #320679;
 }
 
 .depoimentos-container {
@@ -216,19 +216,19 @@ h2 {
 }
 
 .depoimento {
-  background-color: #ccbfbf;
+  background-color: #4e504d;
   max-width: 300px;
   padding: 20px;
   border-radius: 10px;
   font-style: itali;
-  box-shadow: 0 0 10px rgba(0, 0, 0, 0.05);
+  box-shadow: 0 0 10px rgba(61, 31, 31, 0.05);
 }
 
 .depoimento span {
   display: block;
   margin-top: 10px;
   font-weight: bold;
-  color: #444;
+  color: #c56a6a;
 }
 @media (max-width: 600px) {
   .depoimentos-container {
@@ -442,7 +442,7 @@ h2 {
 .qrcode-img {
   max-width: 200px;
   height: auto;
-  border: 2px solid #ccc;
+  border: 2px solid #753131;
   border-radius: 8px;
 }
 
@@ -546,7 +546,7 @@ h2 {
 body {
   font-family: 'Roboto', sans-serif;
   margin: 0;
-  background-color: #111;
+  background-color: #585050;
   color: #f4f4f4;
 }
 
@@ -557,7 +557,7 @@ h1, h2, h3 {
 }
 
 a {
-  color: #ee3482;
+  color: #300215;
   text-decoration: none;
 }
 
@@ -725,5 +725,175 @@ audio {
     background-size: contain; /* Ajusta a imagem para caber na tela sem cortar */
   }
 }
+/* Estilo geral */
+section {
+  padding: 40px 20px;
+  max-width: 900px;
+  margin: 0 auto;
+  font-family: Arial, sans-serif;
+}
 
+/* Título */
+h2 {
+  color: #333;
+  margin-bottom: 10px;
+}
 
+/* PIX */
+.pix-container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  align-items: center;
+  background: #f9f9f9;
+  border-radius: 10px;
+  padding: 20px;
+  box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+}
+
+.qrcode-img {
+  max-width: 200px;
+  width: 100%;
+  border: 1px solid #ccc;
+  border-radius: 10px;
+}
+
+.pix-dados {
+  flex: 1;
+}
+
+.pix-dados p {
+  font-size: 16px;
+  margin-bottom: 10px;
+}
+
+.pix-dados button {
+  padding: 10px 20px;
+  background-color: #00c853;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.pix-dados button:hover {
+  background-color: #009624;
+}
+
+/* CONTATO */
+.contato-container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 30px;
+  background: #f0f0f0;
+  border-radius: 10px;
+  padding: 20px;
+}
+
+.info-contato {
+  flex: 1;
+  font-size: 16px;
+}
+
+.info-contato a {
+  color: #00796b;
+  text-decoration: none;
+}
+
+.info-contato a:hover {
+  text-decoration: underline;
+}
+
+.mapa {
+  flex: 1;
+}
+
+/* WHATSAPP FIXO */
+.whatsapp-fixo {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  width: 60px;
+  height: 60px;
+  z-index: 999;
+}
+
+.whatsapp-fixo img {
+  width: 100%;
+  height: auto;
+}
+
+section {
+  padding: 40px 20px;
+  max-width: 900px;
+  margin: 0 auto;
+  font-family: Arial, sans-serif;
+}
+
+h2 {
+  color: #333;
+  margin-bottom: 15px;
+}
+
+/* PIX */
+.pix-container {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 20px;
+  background: #f9f9f9;
+  border-radius: 12px;
+  padding: 20px;
+  box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+}
+
+.qrcode-img {
+  width: 200px;
+  border: 1px solid #ccc;
+  border-radius: 10px;
+}
+
+section {
+  padding: 40px 20px;
+  max-width: 800px;
+  margin: auto;
+  font-family: Arial, sans-serif;
+}
+
+h2 {
+  color: #333;
+  margin-bottom: 15px;
+}
+
+.pix-container {
+  background: #f9f9f9;
+  border-radius: 10px;
+  padding: 20px;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+  margin-bottom: 30px;
+}
+
+.pix-dados {
+  font-size: 16px;
+}
+
+.pix-dados button {
+  margin-top: 10px;
+  padding: 10px 20px;
+  background-color: #00c853;
+  color: white;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: background 0.3s;
+}
+
+.pix-dados button:hover {
+  background-color: #009624;
+}
+
+.mapa {
+  background: #f0f0f0;
+  padding: 20px;
+  border-radius: 10px;
+}

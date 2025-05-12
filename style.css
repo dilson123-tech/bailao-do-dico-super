@@ -46,7 +46,7 @@ h2 {
 /* Seção sobre */
 .sobre {
   padding: 50px 20px;
-  background-color: #b6babdd7;
+  background-color: #a3abb1d7;
   text-align: center;
 }
 
@@ -58,7 +58,7 @@ h2 {
 
 .conteudo-sobre p {
   font-size: 1.2rem;
-  color: #3b2e2e;
+  color: #5e4f4f;
   max-width: 800px;
   margin: 0 auto;
 }
@@ -504,7 +504,7 @@ h2 {
 
 .audio-container h2 {
   font-size: 2rem;
-  color: #333;
+  color: #8b8585;
   margin-bottom: 20px;
 }
 
@@ -547,8 +547,8 @@ h2 {
 body {
   font-family: 'Roboto', sans-serif;
   margin: 0;
-  background-color: #585050;
-  color: #f4f4f4;
+  background-color: #ee3c3c;
+  color: #cfcbcb;
 }
 
 h1, h2, h3 {
@@ -682,14 +682,14 @@ audio {
 
 /* Estilo do Rodapé */
 .rodape {
-  background-color: #333;
+  background-color: #cab2b2;
   color: #d8c4c4;
   padding: 20px 0;
   text-align: center;
 }
 
 .social-media a {
-  color: #b89c9c;
+  color: #8b7676;
   font-size: 1.8rem;
   margin: 0 15px;
   transition: color 0.3s ease;
@@ -736,7 +736,7 @@ section {
 
 /* Título */
 h2 {
-  color: #333;
+  color: #494545;
   margin-bottom: 10px;
 }
 
@@ -832,7 +832,7 @@ section {
 }
 
 h2 {
-  color: #333;
+  color: #3d3c3c;
   margin-bottom: 15px;
 }
 
@@ -862,7 +862,7 @@ section {
 }
 
 h2 {
-  color: #333;
+  color: #464545;
   margin-bottom: 15px;
 }
 

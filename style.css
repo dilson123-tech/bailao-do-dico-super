@@ -711,5 +711,18 @@ audio {
   transform: scale(1.2);
 }
 
+.background {
+  background-image: url('caminho/para/imagem.jpg');
+  background-size: cover; /* Isso garante que a imagem preencha a tela sem cortar */
+  background-position: center center; /* Centraliza a imagem */
+  background-attachment: fixed; /* Faz com que a imagem fique fixa enquanto a página rola */
+}
+
+
+@media (max-width: 768px) {
+  .background {
+    background-size: contain; /* Ajusta a imagem para caber na tela sem cortar */
+  }
+}
 
 

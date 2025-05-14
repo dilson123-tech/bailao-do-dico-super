@@ -320,62 +320,70 @@
   </div>
 </section>
 
-<section class="contato-section" id="Contato">
-  <h2>📍 Localização & Contato</h2>
-  <div class="contato-container">
-    <div class="info-contato">
-      <p>📌 Rua das magi 51 itapema do norte, Itapoa SC - Itapoá/SC</p>
-      <p>📞 Telefone: (47) 99687-6878</p>
-      <p>✉️ E-mail. dilsonpereira231@gmail.com</p>
-      <p>💬 WhatsApp: <a href="https://wa.me/5547996876878" target="_blank">Clique aqui</a></p>
-    </div>
-    <div class="mapa" id="mapa">
-      <!-- Substitua o link abaixo pelo código gerado do Google Maps -->
-      <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3472.925229105401!2d-48.6720844847531!3d-26.23689242818169!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94df46e40b1c8b99%3A0x6187c4a25688fd2!2sRua%20Central%2C%20123%20-%20Itapo%C3%A1%2FSC!5e0!3m2!1spt-BR!2sbr!4v1615206355502!5m2!1spt-BR!2sbr" width="100%" height="250" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
-    </div>
-  </div>
-</section>
+
 
 <a href="https://wa.me/5547996876878" class="whatsapp-fixo" target="_blank" title="Fale conosco pelo WhatsApp">
   <img src="https://cdn-icons-png.flaticon.com/512/733/733585.png" alt="WhatsApp">
 </a>
-
-
-
-    
+ 
   </div>
 </section>
 
-<section class="contato-section" id="contato">
-  <h2>📍 Localização</h2>
+<section class="contato-section" id="Contato">
+  <h2>📍 Localização & Contato</h2>
   <div class="contato-container">
+
+    <!-- Bloco de Informações -->
     <div class="info-contato">
-      <p><strong>Endereço:</strong> Rua das Maggi, 51 – Itapema do Norte, Itapoá/SC</p>
+      <p>📌 Rua das Magi, 51 – Itapema do Norte, Itapoá – SC</p>
+      <p>📞 Telefone: (47) 99687-6878</p>
+      <p>✉️ E-mail: <a href="mailto:dilsonpereira231@gmail.com">dilsonpereira231@gmail.com</a></p>
+      <p>💬 WhatsApp: <a href="https://wa.me/5547996876878" target="_blank" rel="noopener">Clique aqui para conversar</a></p>
     </div>
 
-    
-        .pix-dados {
-  font-size: 16px;
-}
+    <!-- Mapa incorporado -->
+    <div class="mapa" id="mapa">
+      <iframe 
+        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3472.925229105401!2d-48.6720844847531!3d-26.23689242818169!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94df46e40b1c8b99%3A0x6187c
 
-.pix-dados button {
-  margin-top: 10px;
-  padding: 10px 20px;
-  background-color: #00c853;
-  color: white;
-  border: none;
-  border-radius: 6px;
-  cursor: pointer;
-  transition: background 0.3s;
-}
+      
+    <div class="pix-dados">
+  <p>🔑 Chave Pix (e-mail): <strong>dilsonpereira231@gmail.com</strong></p>
+  <button onclick="copiarPix()">Copiar Chave Pix</button>
+</div>
 
-.pix-dados button:hover {
-  background-color: #7e11b1;
-}
+<!-- Script para copiar a chave Pix -->
+<script>
+  function copiarPix() {
+    const chavePix = "dilsonpereira231@gmail.com";
+    navigator.clipboard.writeText(chavePix)
+      .then(() => {
+        alert("Chave Pix copiada com sucesso!");
+      })
+      .catch(err => {
+        alert("Erro ao copiar a chave Pix.");
+        console.error(err);
+      });
+  }
+</script>
 
-.mapa {
-  background: #f0f0f0;
-  padding: 20px;
-  border-radius: 10px;
-}
 
+<div class="pix-dados">
+  <p>🔑 Chave Pix (e-mail): <strong>dilsonpereira231@gmail.com</strong></p>
+  <button onclick="copiarPix()">Copiar Chave Pix</button>
+</div>
+
+<!-- Script para copiar a chave Pix -->
+<script>
+  function copiarPix() {
+    const chavePix = "dilsonpereira231@gmail.com";
+    navigator.clipboard.writeText(chavePix)
+      .then(() => {
+        alert("Chave Pix copiada com sucesso!");
+      })
+      .catch(err => {
+        alert("Erro ao copiar a chave Pix.");
+        console.error(err);
+      });
+  }
+</script>

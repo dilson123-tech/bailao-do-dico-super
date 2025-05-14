@@ -1231,3 +1231,18 @@ h2 {
 .redes-contato a:hover {
   color: #ff6600;
 }
+.botao-navegar {
+  display: inline-block;
+  margin-top: 15px;
+  padding: 10px 20px;
+  background-color: #ff6600;
+  color: white;
+  border-radius: 8px;
+  text-decoration: none;
+  font-weight: bold;
+  transition: background 0.3s;
+}
+
+.botao-navegar:hover {
+  background-color: #e65c00;
+}

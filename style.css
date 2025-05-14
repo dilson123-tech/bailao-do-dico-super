@@ -788,9 +788,9 @@ h2 {
   display: flex;
   flex-wrap: wrap;
   gap: 30px;
-  background: #f0f0f0;
+  background: #a78181;
   border-radius: 10px;
-  padding: 20px;
+  padding: 3ch;
 }
 
 .info-contato {
@@ -928,7 +928,7 @@ h2 {
 /* Informações de contato */
 .info-contato {
   flex: 1 1 300px;
-  background-color: #fff;
+  background-color: #f7f4f4;
   padding: 25px;
   border-radius: 12px;
   box-shadow: 0 2px 8px rgba(0,0,0,0.05);
@@ -981,7 +981,7 @@ h2 {
 /* Informações de contato */
 .info-contato {
   flex: 1 1 300px;
-  background-color: #ffffff;
+  background-color: #dad3d3;
   padding: 25px;
   border-radius: 12px;
   box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
@@ -1005,21 +1005,7 @@ h2 {
   text-decoration: underline;
 }
 
-/* Mapa incorporado */
-.mapa {
-  flex: 1 1 300px;
-  border-radius: 12px;
-  overflow: hidden;
-  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
-}
 
-.mapa iframe {
-  width: 100%;
-  height: 100%;
-  min-height: 250px;
-  border: 0;
-  border-radius: 12px;
-}
 
 /* Responsividade */
 @media (max-width: 768px) {
@@ -1028,10 +1014,6 @@ h2 {
     align-items: center;
   }
 
-  .info-contato,
-  .mapa {
-    width: 100%;
-  }
 }
 .pix-dados {
   font-size: 16px;
@@ -1055,4 +1037,203 @@ h2 {
 
 .pix-dados button:hover {
   background-color: #009624; /* Tom mais escuro de verde no hover */
+}
+.redes-contato {
+  margin-top: 30px;
+  text-align: center;
+}
+
+.redes-contato h3 {
+  font-size: 1.5rem;
+  margin-bottom: 15px;
+  color: #333;
+}
+
+.redes-contato ul {
+  list-style: none;
+  padding: 0;
+}
+
+.redes-contato li {
+  margin: 10px 0;
+}
+
+.redes-contato a {
+  color: #007bff;
+  text-decoration: none;
+  font-weight: 600;
+  transition: color 0.3s;
+}
+
+.redes-contato a:hover {
+  color: #ff6600;
+}
+.ingressos-section {
+  background-color: #fff4e6;
+  padding: 60px 20px;
+  text-align: center;
+  border-radius: 16px;
+  max-width: 1000px;
+  margin: 40px auto;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.08);
+}
+
+.ingressos-section h2 {
+  font-size: 2.2rem;
+  color: #d35400;
+  margin-bottom: 10px;
+}
+
+.ingressos-section p {
+  font-size: 1.1rem;
+  margin-bottom: 30px;
+  color: #444;
+}
+
+.ingressos-container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 30px;
+  justify-content: center;
+}
+
+.card-ingresso {
+  background-color: #fff;
+  padding: 25px;
+  border-radius: 16px;
+  box-shadow: 0 3px 10px rgba(0,0,0,0.05);
+  width: 250px;
+}
+
+.card-ingresso h3 {
+  font-size: 1.5rem;
+  color: #333;
+  margin-bottom: 10px;
+}
+
+.card-ingresso .preco {
+  font-size: 1.2rem;
+  font-weight: bold;
+  color: #27ae60;
+  margin-bottom: 15px;
+}
+
+.botao-compra {
+  display: inline-block;
+  padding: 10px 20px;
+  background-color: #ff6600;
+  color: white;
+  text-decoration: none;
+  border-radius: 8px;
+  font-weight: bold;
+  transition: background 0.3s;
+}
+
+.botao-compra:hover {
+  background-color: #e65100;
+}
+
+/* Responsivo */
+@media (max-width: 600px) {
+  .ingressos-container {
+    flex-direction: column;
+    align-items: center;
+  }
+}
+.contato-section {
+  background-color: #7c7474;
+  padding: 60px 20px;
+  text-align: center;
+  border-radius: 16px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.08);
+  max-width: 1000px;
+  margin: 40px auto;
+}
+
+.contato-section h2 {
+  font-size: 2rem;
+  color: #797777;
+  margin-bottom: 30px;
+  font-weight: 700;
+}
+
+.contato-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  gap: 20px;
+}
+
+.info-contato {
+  flex: 1 1 300px;
+  background-color: #b39898;
+  padding: 25px;
+  border-radius: 12px;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.05);
+  text-align: left;
+  font-size: 1rem;
+  color: #5f5e5e;
+}
+
+.info-contato p {
+  margin-bottom: 12px;
+  line-height: 1.6;
+}
+
+.info-contato a {
+  color: #ff6600;
+  text-decoration: none;
+  font-weight: 600;
+}
+
+.info-contato a:hover {
+  text-decoration: underline;
+}
+
+.mapa {
+  flex: 1 1 300px;
+  border-radius: 12px;
+  overflow: hidden;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.05);
+}
+
+@media (max-width: 768px) {
+  .contato-container {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .info-contato, .mapa {
+    width: 100%;
+  }
+}
+.redes-contato {
+  margin-top: 30px;
+  text-align: center;
+}
+
+.redes-contato h3 {
+  font-size: 1.5rem;
+  margin-bottom: 15px;
+  color: #525050;
+}
+
+.redes-contato ul {
+  list-style: none;
+  padding: 0;
+}
+
+.redes-contato li {
+  margin: 10px 0;
+}
+
+.redes-contato a {
+  color: #0370e6;
+  text-decoration: none;
+  font-weight: 600;
+  transition: color 0.3s;
+}
+
+.redes-contato a:hover {
+  color: #ff6600;
 }

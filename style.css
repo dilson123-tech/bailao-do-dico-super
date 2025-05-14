@@ -95,7 +95,7 @@ h2 {
 .galeria-section h2 {
   margin-bottom: 20px;
   font-size: 2rem;
-  color: #3f17af;
+  color: #360c15;
 }
 
 .galeria-fotos,
@@ -162,7 +162,7 @@ h2 {
 }
 
 .eventos-section {
-  background-color: #f8f8f8;
+  background-color: #b48989;
   padding: 30px 20px;
   text-align: center;
 }
@@ -170,35 +170,37 @@ h2 {
 .eventos-section h2 {
   font-size: 2rem;
   margin-bottom: 20px;
-  color: #a30000;
+  color: #ce1616;
 }
 
 .evento {
-  background-color: rgb(110, 170, 150);
+  background-color: rgb(68, 90, 90);
   max-width: 500px;
   margin: 0 auto;
   padding: 20px;
   border-radius: 12px;
-  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  box-shadow: 0 0 10px rgba(19, 5, 5, 0.1);
 }
+
 
 .botao-evento {
   display: inline-block;
   margin-top: 15px;
   padding: 10px 20px;
-  background-color: #a30000;
-  color: rgb(150, 116, 116);
+  background-color: #970e0e;
+  color: rgb(220, 217, 224);
   border-radius: 6px;
   text-decoration: none;
   transition: background 0.3s ease;
 }
 
 .botao-evento:hover {
-  background-color: #7a0000;
+  background-color: #7e1419;
+
 }
 
 .depoimentos-section {
-  background-color: #99764f;
+  background-color: #9b7243;
   padding: 40px 20px;
   text-align: center;
 }
@@ -862,7 +864,7 @@ section {
 }
 
 h2 {
-  color: #464545;
+  color: #503d3d;
   margin-bottom: 15px;
 }
 
@@ -870,32 +872,31 @@ h2 {
   background: #f9f9f9;
   border-radius: 10px;
   padding: 20px;
-  box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+  box-shadow: 0 2px 8px rgba(179, 157, 157, 0.1);
   margin-bottom: 30px;
 }
 
-.pix-dados {
-  font-size: 16px;
+/* Estilo para a seção de eventos */
+.eventos-section {
+  background: linear-gradient(to right, #c29044, #ffe0b3);
+  padding: 50px 20px;
+  text-align: center;
+  border-radius: 16px;
+  box-shadow: 0 4px 12px ;
+  margin: 40px auto;
+  max-width: 500px;
 }
 
-.pix-dados button {
-  margin-top: 10px;
-  padding: 10px 20px;
-  background-color: #00c853;
-  color: white;
-  border: none;
-  border-radius: 6px;
-  cursor: pointer;
-  transition: background 0.3s;
+.eventos-section h2 {
+  font-size: 2rem;
+  color: #e67300;
+  margin-bottom: 30px;
+  font-weight: 700;
 }
 
-.pix-dados button:hover {
-  background-color: #009624;
-}
-
-.mapa {
-  background: #f0f0f0;
-  padding: 20px;
-  border-radius: 10px;
-}
-
+/* Container das infos do evento */
+.eventos {
+  background-color: #080a08c4;
+  border-radius: 12px;
+  padding: 25px;
+  box-shadow: 0 2px 8px

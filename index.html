@@ -131,40 +131,41 @@
       <button class="audio-btn">🔊 Tocar Música 3</button>
     </div>
   </div>
-  
-
   <script>
-    // Definindo a data e hora do evento
-    const eventoData = new Date("2025-05-18T22:00:00").getTime();
+  function getProximoSabado22h() {
+    const agora = new Date();
+    const diaAtual = agora.getDay(); // 0 = domingo, 6 = sábado
+    const diasParaSabado = (6 - diaAtual + (agora.getHours() >= 22 ? 7 : 0)) % 7;
+    
+    const proximoSabado = new Date(agora);
+    proximoSabado.setDate(agora.getDate() + diasParaSabado);
+    proximoSabado.setHours(22, 0, 0, 0); // 22h
 
-    // Atualiza a contagem regressiva a cada 1 segundo
-    const x = setInterval(function() {
+    return proximoSabado.getTime();
+  }
 
-      // Obtém o tempo atual
-      const agora = new Date().getTime();
+  let eventoData = getProximoSabado22h();
 
-      // Calcula a diferença entre o evento e o tempo atual
-      const diferenca = eventoData - agora;
+  const x = setInterval(function () {
+    const agora = new Date().getTime();
+    const diferenca = eventoData - agora;
 
-      // Calcula os dias, horas, minutos e segundos restantes
-      const dias = Math.floor(diferenca / (1000 * 60 * 60 * 24));
-      const horas = Math.floor((diferenca % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
-      const minutos = Math.floor((diferenca % (1000 * 60 * 60)) / (1000 * 60));
-      const segundos = Math.floor((diferenca % (1000 * 60)) / 1000);
+    if (diferenca <= 0) {
+      eventoData = getProximoSabado22h(); // Atualiza pro próximo sábado
+    }
 
-      // Atualiza o HTML com os valores calculados
-      document.getElementById("dias").textContent = dias;
-      document.getElementById("horas").textContent = horas;
-      document.getElementById("minutos").textContent = minutos;
-      document.getElementById("segundos").textContent = segundos;
+    const dias = Math.floor(diferenca / (1000 * 60 * 60 * 24));
+    const horas = Math.floor((diferenca % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+    const minutos = Math.floor((diferenca % (1000 * 60 * 60)) / (1000 * 60));
+    const segundos = Math.floor((diferenca % (1000 * 60)) / 1000);
 
-      // Se a contagem regressiva terminar
-      if (diferenca < 0) {
-        clearInterval(x); // Para o setInterval
-        document.getElementById("timer").innerHTML = "Evento Começou!";
-      }
-    }, 1000);
-  </script>
+    document.getElementById("dias").textContent = dias >= 0 ? dias : 0;
+    document.getElementById("horas").textContent = horas >= 0 ? horas : 0;
+    document.getElementById("minutos").textContent = minutos >= 0 ? minutos : 0;
+    document.getElementById("segundos").textContent = segundos >= 0 ? segundos : 0;
+  }, 1000);
+</script>
+
 
 <section class="galeria-section">
   <h2>Galeria de Fotos</h2>
